@@ -1,4 +1,4 @@
-#Movie Recommendation System
+Movie Recommendation System
 
 This is a simple Content-Based Movie Recommendation System built using Python. It recommends movies based on textual similarity between movie overviews and genres using CountVectorizer and Cosine Similarity.
 
