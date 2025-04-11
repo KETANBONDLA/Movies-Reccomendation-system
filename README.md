@@ -1,113 +1,85 @@
-Movie Recommendation System
+# 🎬 Movie Recommendation System
 
-This is a simple Content-Based Movie Recommendation System built using Python. It recommends movies based on textual similarity between movie overviews and genres using CountVectorizer and Cosine Similarity.
-
-
----
-
-Features
-
-Cleans and preprocesses movie data
-
-Combines Overview and Genre into a single Tags field
-
-Uses CountVectorizer to extract features from text
-
-Computes pairwise similarity using cosine similarity
-
-Recommends top 5 similar movies for a given movie title
-
-
+A simple **Content-Based Movie Recommendation System** built with Python. It recommends movies based on textual similarity between their **overviews** and **genres**, using **CountVectorizer** and **Cosine Similarity**.
 
 ---
 
-Technologies Used
+## ✨ Features
 
-Python
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Scikit-learn
-
-
+- Cleans and preprocesses movie data  
+- Combines `Overview` and `Genre` into a single `Tags` field  
+- Uses `CountVectorizer` to extract features from text  
+- Computes pairwise similarity using **cosine similarity**  
+- Recommends **Top 5** similar movies for a given movie title  
 
 ---
 
-How It Works
+## 🛠️ Technologies Used
 
-1. Reads a CSV file (movies1.csv) containing movie data
-
-
-2. Drops rows with missing values and removes duplicates
-
-
-3. Combines Overview and Genre to create a Tags column
-
-
-4. Vectorizes the Tags using CountVectorizer
-
-
-5. Calculates cosine similarity scores between all movies
-
-
-6. For a given movie, retrieves top 5 most similar movies
-
-
-
+- Python  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Scikit-learn  
 
 ---
 
-Usage
+## ⚙️ How It Works
 
+1. Loads the movie dataset from `movies1.csv`  
+2. Removes rows with missing values and duplicates  
+3. Merges `Overview` and `Genre` into a `Tags` column  
+4. Converts text data into feature vectors using `CountVectorizer`  
+5. Calculates similarity scores using cosine similarity  
+6. Recommends the top 5 similar movies for a selected title  
+
+---
+
+## ▶️ Usage
+
+```python
 recommend("12 Angry Men")
+```
 
-The output will be the top 5 similar movie titles based on their content.
-
-
----
-
-File Requirements
-
-movies1.csv (or any other movies database) should include the following columns:
-
-id
-
-Title
-
-Overview
-
-Genre
-
-
-
+**Output:**  
+Top 5 movie recommendations similar to "12 Angry Men".
 
 ---
 
-Installation
+## 📁 File Requirements
 
-1. Clone the repository
+Make sure your CSV file (`movies1.csv`) contains the following columns:
 
+- `id`  
+- `Title`  
+- `Overview`  
+- `Genre`  
 
-2. Make sure you have the following libraries installed:
+---
 
+## 🚀 Installation
 
+1. **Clone the repository**
 
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. **Install dependencies**
+
+```bash
 pip install numpy pandas scikit-learn matplotlib
+```
 
-3. Run the notebook or script in your Python environment.
+3. **Run the script or Jupyter Notebook**
 
-
-
+Open the `.ipynb` file in Jupyter or run the script using Python.
 
 ---
 
-License
+## 📄 License
 
-This project is open-source and available under the MIT License.
-
+This project is open-source and available under the **MIT License**.
 
 ---
