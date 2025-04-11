@@ -77,9 +77,3 @@ pip install numpy pandas scikit-learn matplotlib
 Open the `.ipynb` file in Jupyter or run the script using Python.
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
-
----
